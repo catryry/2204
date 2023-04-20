@@ -6,7 +6,8 @@ import ImgRm2 from '../assets/img-reminders/rose.jpg'
 import ImgRm3 from '../assets/img-reminders/jaehyun01.jpg'
 import { Link } from 'react-router-dom'
 import { routes } from '../routes'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const Reminders = () => {
 
@@ -53,9 +54,9 @@ const Reminders = () => {
   return (
     <div>
       <div className={styles.title}>
-      <h2>Recuerdos en el tiempo, <br />
-        un trozo de cada cumpleaños
-      </h2>
+        <h2>Recuerdos en el tiempo, <br />
+          un trozo de cada cumpleaños
+        </h2>
       </div>
 
       <div className={styles.remindersContainer}>
@@ -176,17 +177,12 @@ const Reminders = () => {
 
       </div>
 
-      <div className='button' id={styles.buttonIdRem}>
-      <Link to={routes.music}>
-      <button>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              next page <br />
-              ma' pretty foxy
-            </button>
-            </Link>
+      <div id={styles.buttonIdRem}>
+        <Link to={routes.music}>
+          <button>
+          <FontAwesomeIcon icon={faChevronRight} />
+          </button>
+        </Link>
       </div>
     </div>
   )

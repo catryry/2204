@@ -2,11 +2,16 @@
     margin: 2rem;
     padding: 2rem;
     background-color: rgb(255, 255, 255);
-    
+    border-radius: .3rem;
 }
 
 .alice-carousel__dots-item:not(.__custom):hover, 
 .alice-carousel__dots-item:not(.__custom).__active {
-    background-color: var(--color-primary);
-    color: var(--color-primary);
+    background-color: var(--color-primary) !important;
+}
+
+@media (min-width: 768px) {
+    .cardLetters {
+        margin: 1rem 14rem;
+    }
 }

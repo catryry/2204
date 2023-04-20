@@ -2,12 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
+    
 }
 
 
 .title {
-    margin-top: 1rem;
     font-weight: 500;
     font-family: var(--font-family-primary);
     font-size: 1.7rem;
@@ -26,10 +25,8 @@
     margin-right: 2.2rem;
 }
 
-.date hr {
-    height: .1rem;
-    border: none;
-    background-color: var(--color-primary);
+.date .line {
+    border-bottom: .1rem solid var(--color-primary);
     margin: .5rem;
 }
 
@@ -43,7 +40,7 @@
     display: flex;
     justify-content: center;
     margin: auto;
-    padding: .4rem 1rem 2rem 1rem;
+    
     transition: all 0.3s ease-in-out;
 }
 
@@ -66,7 +63,6 @@
     height: auto;
     object-fit: cover;
     object-position: center bottom;
-
 }
 
 .bk {
@@ -86,53 +82,26 @@
 .introduction {
     text-align: center;
     width: 15rem;
-    margin-bottom: 1rem;
 }
 
 .introduction p {
     text-align: justify;
 }
 
+#buttonHome button {
+    background: none;
+    border: none;
+    cursor: pointer; 
+}
+
 @media (min-width: 768px) {
 
-    .home {
-      flex-wrap: wrap;
-    }
-  
     .title {
-      width: 40%;
-      margin-left: 12rem;
+        align-self: center;
+        margin-left: 0rem;
     }
-  
     .date {
-      width: 30%;
-      padding: 3rem 1rem;
-      margin-left: 1rem;
-    }
-  
-    .banner {
-      width: 45%;
-      align-self: center;
-      margin: 2rem 0;
-    }
-  
-    .introduction {
-      width: 20%;
-      margin-left: 13rem;
-      margin-bottom: 2rem;
-      text-align: left;
-      padding: 1rem;
+        display: none;
     }
 
-    section {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-       
-    }
-  
-    .home {
-        flex-direction: row;
-    }
-  
 }

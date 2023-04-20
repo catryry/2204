@@ -4,7 +4,9 @@ import Img1 from '../assets/img-music/flor-de-jamaica.jpg'
 import Img2 from '../assets/img-music/laura-perez.jpg'
 import Img3 from '../assets/img-music/pedrina.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faPlay, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { routes } from '../routes'
+import { Link } from 'react-router-dom'
 
 const Music = () => {
 
@@ -67,6 +69,11 @@ const Music = () => {
           <p>Pedrina</p>
         </a>
       </div>
+      <Link to={routes.letters}>
+      <button>
+      <FontAwesomeIcon icon={faChevronRight} />
+      </button>
+      </Link>
     </section>
   );
 }

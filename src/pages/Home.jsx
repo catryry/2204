@@ -3,6 +3,8 @@ import styles from "../styles/home.module.css";
 import ImgHome from "../assets/img-home/jaehyun.jpg";
 import { routes } from "../routes"
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 import ReactConfetti from 'react-confetti';
 
@@ -60,24 +62,24 @@ const Home = () => {
       </h2>
       <div className={styles.date}>
       <p>Schedule</p>
-      <hr />
+      <p className={styles.line}></p>
       <div className={styles.dateChilds}>
       <p>Date</p>
       <p>22-04</p>
       </div>
       </div>
-
+      <br />
       <section className={`${styles.banner} ${animate ? styles.transition : ''}`}
         onMouseEnter={() => setAnimate(true)}
         onMouseLeave={() => setAnimate(false)}>
         <div className={styles.bannerImg}>
           <img src={ImgHome} alt="home-jaehyun" />
         </div>
-
+     
         <div className={styles.bk}>
         </div>
       </section>
-      
+      <br />
       <section className={styles.introduction}>
         <p>
           Sabrás de secretos, proyectos que son regalos (jeje),
@@ -88,15 +90,10 @@ const Home = () => {
         </p>
       </section>
 
-      <section className='button' id="buttonHome">
+      <section id={styles.buttonHome}>
         <Link to={routes.reminders}>
           <button>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            next page, <br></br>
-            foxy boy
+          <FontAwesomeIcon icon={faChevronRight} />
           </button>
         </Link>
       </section>
