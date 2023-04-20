@@ -1,0 +1,12 @@
+.cardLetters {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.alice-carousel__dots-item:not(.__custom):hover, 
+.alice-carousel__dots-item:not(.__custom).__active {
+    background-color: var(--color-primary);
+    color: var(--color-primary);
+}

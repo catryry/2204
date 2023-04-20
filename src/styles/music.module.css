@@ -1,0 +1,75 @@
+.containerCardMusic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCardMusic .introduction h2 {
+    font-family: var(--font-primary);
+    margin-bottom: .7rem;
+}
+
+.containerCardMusic .introduction {
+    text-align: center;
+    margin: 2rem;
+    width: 17rem;
+}
+
+.cardMusic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem;
+    padding: 1rem;
+    background-color: var(--color-quinary);
+    border-radius: .3rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.transition {
+    transform: scale(1.02);
+}
+
+.cardMusic img {
+    width: 13rem;
+    height: 13rem;
+    object-fit: cover;
+    border-radius: .9rem;
+    overflow: hidden;
+    padding: .7rem;
+}
+
+.cardMusic hr {
+    margin: 0 auto;
+    width: 50%;
+    color: var(--color-primary);
+    margin: .8rem;
+}
+
+.cardMusic a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.cardMusic a h2:hover {
+    color: var(--color-tertiary);
+    text-decoration: underline;
+}
+
+.cardMusic h2 {
+    font-weight: 500;
+}
+
+.cardMusic p {
+    font-size: .7rem;
+}
+
+@media (min-width: 768px) {
+    .containerCardMusic {
+        flex-direction: initial;
+        margin-top: 4rem;
+    }
+}

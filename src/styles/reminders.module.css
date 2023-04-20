@@ -1,0 +1,88 @@
+.title h2{
+    text-align: center;
+    font-family: var(--font-family-primary);
+    margin-top: 2rem;
+}
+
+.reminderCard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+}
+
+.reminderCard p {
+    padding: 1rem;
+    font-size: .8rem;
+}
+
+.reminderCard hr {
+    width: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reminderCard button {
+    font-size: .9rem;
+}
+
+.modalContainer {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-quinary);
+    padding: 1.2rem;
+    max-width: 20rem;
+    max-height: 30rem;
+    border-radius: .3rem;
+    box-shadow: 0rem 0rem .8rem var(--color-transparent);
+}
+
+.modalImgContainer {
+    overflow: hidden;
+    width: 13rem;
+    height: 13rem;
+    border-radius: .3rem;
+}
+
+.modalImgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.modalContent p:nth-child(4) {
+    margin-bottom: 1.3rem;
+    text-align: justify;
+}
+
+#buttonIdRem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+@media (min-width: 768px) {
+    .remindersContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.6rem;
+    }
+}
