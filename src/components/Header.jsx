@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import styles from "../styles/header.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import ImgHe1 from '../assets/img-header/tartaglia1.png'
 
 
 const Header = () => {
@@ -29,7 +30,9 @@ const Header = () => {
 
   return (
     <header>
-      <h2>2204</h2>
+      <h2><img src={ImgHe1} alt="" style={{
+        width: "3rem"
+      }}/></h2>
 
       <nav ref={navRef}>
 
