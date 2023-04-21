@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <header>
-      <h2>2204/2704</h2>
+      <h2>2204</h2>
 
       <nav ref={navRef}>
 
