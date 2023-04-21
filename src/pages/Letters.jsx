@@ -44,12 +44,15 @@ const Letters = () => {
     }
   };
 
+  
+
   return (
     <div>
       <AliceCarousel {...options}
         mouseTracking
         items={letters.map((letter) => (
           <div key={letter.id} className='cardLetters'>
+            <div className='cardContent'>
             <h2>{letter.title}</h2>
             <br />
             <p className='myText'>{letter.content.split('\n').map((line, index) => {
@@ -58,6 +61,7 @@ const Letters = () => {
 
             <br />
             <p>{letter.by}</p>
+            </div>
           </div>
         ))}
 
