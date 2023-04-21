@@ -1,7 +1,7 @@
 .cardLetters {
     margin: 2rem;
     padding: 2rem;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-quinary);
     border-radius: .3rem;
 }
 
