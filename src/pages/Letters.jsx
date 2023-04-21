@@ -2,10 +2,10 @@ import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import "../styles/letters.css"
 import 'react-alice-carousel/lib/alice-carousel.css';
-import {title1, content1, by1} from '../txt/carta1.json'
-import {title2, content2, by2} from '../txt/carta2.json'
-import {title3, content3, by3} from '../txt/carta3.json'
-import {title4, content4, by4} from '../txt/carta4.json'
+import { title1, content1, by1 } from '../txt/carta1.json'
+import { title2, content2, by2 } from '../txt/carta2.json'
+import { title3, content3, by3 } from '../txt/carta3.json'
+import { title4, content4, by4 } from '../txt/carta4.json'
 
 const Letters = () => {
 
@@ -46,21 +46,24 @@ const Letters = () => {
 
   return (
     <div>
-    <AliceCarousel {...options}
-      mouseTracking
-      items={letters.map((letter) => (
-        <div key={letter.id} className='cardLetters'>
-          <h2>{letter.title}</h2>
-          <br />
-          <p>{letter.content}</p>
-          <br />
-          <p>{letter.by}</p>
-        </div>
-      ))}
-    
-    />
-    
-  </div>
+      <AliceCarousel {...options}
+        mouseTracking
+        items={letters.map((letter) => (
+          <div key={letter.id} className='cardLetters'>
+            <h2>{letter.title}</h2>
+            <br />
+            <p className='myText'>{letter.content.split('\n').map((line, index) => {
+              return <React.Fragment key={index}>{line}<br /></React.Fragment>;
+            })}</p>
+
+            <br />
+            <p>{letter.by}</p>
+          </div>
+        ))}
+
+      />
+
+    </div>
   )
 }
 

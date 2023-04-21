@@ -84,12 +84,12 @@ const Reminders = () => {
                   </div>
                   <p>¿Recuerdas cada foto que he usado?</p>
                   <hr />
-                  <p>Como me gustaría haber guardado cada recuerdo,
-                    poder verlo, no sé si he podido olvidar alguna
-                    parte más, pero es lo más vívido que tengo.
+                  <p>Me gustaría haber guardado cada recuerdo y
+                    poder verlo, por ejemplo, sé que te habré escrito algo,
+                    pero la imagen siempre va a ser lo más vívido que tengo.
                     Gracias por aparecer en mi vida, por aquellos
-                    meses (aún recuerdo el post) habernos conocido,
-                    que me hayas respondido aquella historia de astrología,
+                    meses (aún recuerdo el post) habernos conocido, haber coincidido,
+                    que me hayas respondido esa historia de astrología,
                     muchacho de mis ojos</p>
 
                   <button onClick={handleCloseModal1}>Cerrar</button>
@@ -128,7 +128,7 @@ const Reminders = () => {
                     aún recuerdo que quería hacerte algo, las cosas
                     no se dieron. Terminó siendo un mamarracho
                     (cosa mal hecha) Espero estar remediándolo
-                    en esta bobadita, jeje.</p>
+                    en esta bobadita, mi zorrito lindo.</p>
                   <button onClick={handleCloseModal2}>Cerrar</button>
                 </div>
               </div>
@@ -158,7 +158,7 @@ const Reminders = () => {
                   <div className={styles.modalImgContainer}>
                     <img src={ImgRm3} alt="reminder-jaheyun" />
                   </div>
-                  <p>Guía a ti</p>
+                  <p>Feliz cumpleaños, mi Salem</p>
                   <hr />
                   <p>Estoy tan feliz de estar contigo, de que existas,
                     de que vivas, que sonrías. Me vas a alegrar
